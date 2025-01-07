@@ -1,0 +1,19 @@
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888
+  application:
+    name: user-service
+
+env:
+  twilio:
+    sms:
+      authToken: ${AUTH_TOKEN:5f46d3a96df94f2a855efe0e3fe51f85}
+      accountSid: ${ACCOUNT_SID:AC8c9b77171a457bf6fc8e72a5506f7d06}
+      fromNo: ${FROM_NUMBER:+17756183795}
+
+
+security:
+  jwt:
+    token:
+      secret-key: 843567893696976453275974432697R634976R738467TR678T34865R6834R8763T478378637664538745673865783678548735687R3
+      expiration: 3600000
