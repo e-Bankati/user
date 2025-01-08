@@ -1,6 +1,6 @@
 spring:
   config:
-    import: optional:configserver:https://bankati-config-server.onrender.com
+    import: optional:configserver:https://bankatii-config-server.onrender.com
   application:
     name: user-service
 
